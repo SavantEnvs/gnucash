@@ -1,0 +1,1 @@
+sqlite3://user:pw@host:3306/path/to/file
