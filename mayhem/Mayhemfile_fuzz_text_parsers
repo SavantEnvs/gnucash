@@ -1,0 +1,8 @@
+project: savantenvs/gnucash
+target: fuzz_text_parsers
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_text_parsers/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_text_parsers
+    libfuzzer: true
